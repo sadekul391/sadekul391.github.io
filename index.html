@@ -7,21 +7,39 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'SolaimanLipi', Arial, sans-serif;
             background-color: #111;
             color: white;
-            text-align: center;
         }
 
         header {
             background-color: #000;
-            padding: 20px;
+            padding: 15px 0;
+            text-align: center;
             font-size: 24px;
             font-weight: bold;
         }
 
+        nav {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
         .content {
             padding: 40px;
+            text-align: center;
         }
 
         .story-box {
@@ -30,10 +48,12 @@
             padding: 20px;
             width: 80%;
             border-radius: 10px;
+            transition: 0.3s;
         }
 
-        .story-box h2 {
-            margin-top: 0;
+        .story-box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px red;
         }
 
         button {
@@ -49,8 +69,11 @@
             background-color: darkred;
         }
 
-        a {
-            text-decoration: none;
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
         }
     </style>
 
@@ -62,38 +85,39 @@
         🌙 রাতের গল্প
     </header>
 
+    <nav>
+        <a href="#">হোম</a>
+        <a href="#">হরর</a>
+        <a href="#">ভালোবাসা</a>
+        <a href="#">যোগাযোগ</a>
+    </nav>
+
     <div class="content">
         <h1>স্বাগতম আমার গল্পের দুনিয়ায়</h1>
-        <p>এখানে আপনি পড়তে পারবেন ভয়ংকর ও রহস্যময় গল্প।</p>
 
-        <!-- Story 1 -->
         <div class="story-box">
             <h2>রাত ৩টার ফোন কল</h2>
-            <p>রাত ঠিক ৩টায় আমার ফোন বেজে উঠলো... স্ক্রিনে কোনো নাম নেই...</p>
-            <a href="story1.html">
-                <button>পুরো গল্প পড়ুন</button>
-            </a>
+            <p>রাত ঠিক ৩টায় আমার ফোন বেজে উঠলো...</p>
+            <a href="story1.html"><button>পুরো গল্প পড়ুন</button></a>
         </div>
 
-        <!-- Story 2 -->
         <div class="story-box">
             <h2>আয়নার মানুষ</h2>
-            <p>প্রতিদিন রাত ১২টার পর আয়নার সামনে দাঁড়ালে আমি নিজের পেছনে আরেকজনকে দেখতে পেতাম...</p>
-            <a href="story2.html">
-                <button>পুরো গল্প পড়ুন</button>
-            </a>
+            <p>আয়নাতে আমি একা ছিলাম না...</p>
+            <a href="story2.html"><button>পুরো গল্প পড়ুন</button></a>
         </div>
 
-        <!-- Story 3 -->
         <div class="story-box">
             <h2>শেষ বাস</h2>
-            <p>রাত ১১টার শেষ বাসে আমি একাই উঠেছিলাম... কিন্তু কিছুক্ষণ পর বুঝলাম বাসের সব সিট ভর্তি...</p>
-            <a href="story3.html">
-                <button>পুরো গল্প পড়ুন</button>
-            </a>
+            <p>বাসে সবাই ছিল… কিন্তু কেউ মানুষ না...</p>
+            <a href="story3.html"><button>পুরো গল্প পড়ুন</button></a>
         </div>
 
     </div>
+
+    <footer>
+        © 2026 রাতের গল্প | All Rights Reserved
+    </footer>
 
 </body>
 
